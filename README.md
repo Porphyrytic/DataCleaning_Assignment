@@ -3,9 +3,8 @@
 ### Repository Contents:
 * README.md - Description of the project
 * CodeBook.txt - Description of the dataset created by run_analysis.R script
-* run_analysis.R - A script that merges, cleans and re-organizes the files from the UC HAR Dataset into a tidy summary dataset
+* run_analysis.R - A script that merges, cleans and re-organizes the files from the UCI HAR Dataset into a tidy summary dataset
 * Analysis.txt - The tidy output of run_analysis.R script. 
-
 
 ### Data Source
 
@@ -21,27 +20,29 @@ Data was downloaded: 13th March, 2016
 
 ## Running the script:
 
-The run_analysis.R script is assumes your working directory is the parent directory of the dataset as downloaded from the link above. It can be run using the following command:
+The run_analysis.R script assumes your working directory is the parent directory of the dataset (originally named 'UCI HAR Dataset' but this name is not necessary for the script to work) .
+
+It can be run using the following command:
 
 source('working_directory/run_analysis.R')
 
-It assumes that the original directory structure of the zipped dataset has been preserved following decompression.  In particular, the following files must be found:
+The script assumes that the original directory structure of the zipped dataset has been preserved following decompression.  In particular, the following files must be found:
 
-In the parent directory (Originally named 'UCI HAR Dataset' but not necessary for the script to work):
-* 'features.txt': List of all features.
+In the parent directory:
+* 'features.txt': List of all features/variables.
 * 'activity_labels.txt': Links the class labels with their activity name.
 
 In the train sub-directory:
 * 'train/X_train.txt': Training data set.
 * 'train/y_train.txt': Training activity labels.
-* 'train/subject_train.txt: Identifies the Individual Subjects
+* 'train/subject_train.txt: Identifies the Individual Subjects in the training group.
 
 In the test sub-directory:
 * 'test/X_test.txt': Test set.
 * 'test/y_test.txt': Test activity labels.
-* 'test/subject_test.txt: Identifies the Individual Subjects
+* 'test/subject_test.txt: Identifies the Individual Subjects in the test group.
 
-The script will create two data frames (Table_1 and Table_2) and write out Table_2 as Analysis.txt.  All other intermediate data is removed during processing.
+The script will create two data frames (Table_1 and Table_2) and write out Table_2 as "Analysis.txt".  All other intermediate data is removed during processing.
 
 ## Outputs
 
@@ -66,7 +67,8 @@ The script will create two data frames (Table_1 and Table_2) and write out Table
 	* Other variables with "mean" values computed on windowed data or post-transformation (e.g. gravityMean) were ignored
 
 ### Analysis.TXT - Final Output (Text File)
+* Variable (header) names are in the first row
+* A description of the Variables can be founf in the Code Book
+* The output can be read using the following command run from the correct working directory:
 
-The output can be read using the following command run from the correct working directory:
-
-Test <- read.table("Analysis.txt",header = TRUE)
+	Test <- read.table("Analysis.txt",header = TRUE)

@@ -72,6 +72,3 @@ rm(Agg_all)
 setwd("../")
 
 write.table(Table_2,file="Analysis.txt",row.names = FALSE)
-
-# Test <- read.table("Analysis.txt",header = TRUE)
-
