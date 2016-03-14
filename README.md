@@ -1,5 +1,13 @@
 ## Getting and Cleaning Data Course Project
 
+### Repository Contents:
+* README.md - Description of the project
+* CodeBook.txt - Description of the dataset created by run_analysis.R script
+* run_analysis.R - A script that merges, cleans and re-organizes the files from the UC HAR Dataset into a tidy summary dataset
+* Analysis.txt - The tidy output of run_analysis.R script. 
+
+
+### Data Source
 
 Human Activity Recognition Dataset created by and courtesy of:
 
