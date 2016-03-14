@@ -68,7 +68,7 @@ The script will create two data frames (Table_1 and Table_2) and write out Table
 
 ### Analysis.TXT - Final Output (Text File)
 * Variable (header) names are in the first row
-* A description of the Variables can be founf in the Code Book
+* A description of the Variables can be found in the Code Book
 * The output can be read using the following command run from the correct working directory:
 
 	Test <- read.table("Analysis.txt",header = TRUE)
