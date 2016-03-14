@@ -1,7 +1,7 @@
-Code Book
+Code Book - Analysis.txt
 
----------------------------
-Human Activity Recognition Dataset created by and courtesy of:
+-----------------------------------------------------------
+Human Activity Recognition Dataset created by, and courtesy of:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
 Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). 
@@ -10,12 +10,19 @@ Vitoria-Gasteiz, Spain. Dec 2012
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Study Design (as described by the authors listed above): 
-
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+-------------
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
+Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+The experiments have been video-recorded to label the data manually. 
+The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). 
+The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. 
+The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. 
+From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 Data was downloaded: 13th March, 2016
-----------------------------
+-----------------------------------------------------------
 
 The Processed Data consists of Gyrometer (Gyro) and accelerometer (Acceleration) readings.
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -159,43 +166,43 @@ Col	Feature
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-33	Variable Name:	Time-Domain Body Acceleration Mag Mean 
+33	Variable Name:	Time-Domain Body Acceleration Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-34	Variable Name:	Time-Domain Body Acceleration Mag StdDeviation
+34	Variable Name:	Time-Domain Body Acceleration Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-35	Variable Name:	Time-Domain Gravity Acceleration Mag Mean 
+35	Variable Name:	Time-Domain Gravity Acceleration Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-36	Variable Name:	Time-Domain Gravity Acceleration Mag StdDeviation
+36	Variable Name:	Time-Domain Gravity Acceleration Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-37	Variable Name:	Time-Domain Body Acceleration Jerk Mag Mean 
+37	Variable Name:	Time-Domain Body Acceleration Jerk Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-38	Variable Name:	Time-Domain Body Acceleration Jerk Mag StdDeviation
+38	Variable Name:	Time-Domain Body Acceleration Jerk Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-39	Variable Name:	Time-Domain Body Gyro Mag Mean 
+39	Variable Name:	Time-Domain Body Gyro Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-40	Variable Name:	Time-Domain Body Gyro Mag StdDeviation
+40	Variable Name:	Time-Domain Body Gyro Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-41	Variable Name:	Time-Domain Body Gyro Jerk Mag Mean 
+41	Variable Name:	Time-Domain Body Gyro Jerk Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-42	Variable Name:	Time-Domain Body Gyro Jerk Mag StdDeviation
+42	Variable Name:	Time-Domain Body Gyro Jerk Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
@@ -271,35 +278,35 @@ Col	Feature
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-61	Variable Name:	Freq-Domain Body Acceleration Mag Mean 
+61	Variable Name:	Freq-Domain Body Acceleration Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-62	Variable Name:	Freq-Domain Body Acceleration Mag StdDeviation
+62	Variable Name:	Freq-Domain Body Acceleration Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-63	Variable Name:	Freq-Domain Body Body Acceleration Jerk Mag Mean 
+63	Variable Name:	Freq-Domain Body Acceleration Jerk Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-64	Variable Name:	Freq-Domain Body Body Acceleration Jerk Mag StdDeviation
+64	Variable Name:	Freq-Domain Body Acceleration Jerk Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-65	Variable Name:	Freq-Domain Body Body Gyro Mag Mean 
+65	Variable Name:	Freq-Domain Body Gyro Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-66	Variable Name:	Freq-Domain Body Body Gyro Mag StdDeviation
+66	Variable Name:	Freq-Domain Body Gyro Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 
-67	Variable Name:	Freq-Domain Body Body Gyro Jerk Mag Mean 
+67	Variable Name:	Freq-Domain Body Gyro Jerk Magnitude Mean 
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 	
-68	Variable Name:	Freq-Domain Body Body Gyro Jerk Mag StdDeviation
+68	Variable Name:	Freq-Domain Body Gyro Jerk Magnitude StdDeviation
 	Description:	Mean of Measurement for each Activity and each Subject (Numeric)
 	Range:	-1.0 to 1.0
 	
